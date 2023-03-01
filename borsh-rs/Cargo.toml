@@ -1,0 +1,18 @@
+[package]
+name = "borsh-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# own dependencies
+
+# crates.io dependencies
+tokio = { version = "1.2", features = ["full"] }
+futures-util = "0.3.25"
+thiserror = "1.0"
+displaydoc = "0.2"
+clap = { version = "4.1.1", features = ["derive"] }
+anyhow = "1.0"
+borsh = { version = "0.10.2", features = ["std","const-generics","rc"] }
